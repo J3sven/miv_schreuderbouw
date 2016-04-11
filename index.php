@@ -82,7 +82,7 @@
             <?php wp_footer(); ?>
                 <div class="miv_footer miv_row row">
                     <div class=" miv_column col-md-3">
-                        <div class="miv_footerzebra"></div>
+                        <div class="miv_footerzebra"><img src="/schreuder/wp-content/themes/miv_schreuderbouw/img/zebra400.png" alt=""></div>
                     </div>
                     <div class=" miv_column col-md-6">
                         <div class="miv_footericonen"></div>

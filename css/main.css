@@ -95,3 +95,10 @@ margin-top: 25px;
 height: 75px;
 background-color: #fff;
 }
+.miv_footerzebra{
+	position: relative;
+	display: block;
+	z-index: 10000;
+	margin-top: -23px;
+    margin-left: 25px;
+}

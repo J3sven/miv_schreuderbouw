@@ -90,9 +90,12 @@ body{
     font-size: 12px;
 }
 .miv_footericonen{
-margin-top: 25px;
-height: 75px;
-background-color: #fff;
+	margin-top: 25px;
+	height: 75px;
+	background-color: #fff;
+}
+.miv_footertext{
+	margin-top: 25px;
 }
 .miv_footerzebra{
 	position: relative;
@@ -100,4 +103,7 @@ background-color: #fff;
 	z-index: 10000;
 	margin-top: -23px;
     margin-left: 25px;
+}
+.navbar{
+	border-radius: 0px;
 }

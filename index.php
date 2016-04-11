@@ -88,9 +88,9 @@
                         <div class="miv_footericonen"></div>
                     </div>
                     <div class=" miv_column miv_corner col-md-2">
-                        <div class="footertext">
-                            <p></p>
-                        </div>
+                        <div class="miv_footertext">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, quidem recusandae neque.
+                            </div>
                     </div>
                     <div class="miv_column_spec col-md-1"></div>
                 </div>

@@ -1,0 +1,80 @@
+body{
+	font-family: 'Source Sans Pro', bold, sans-serif;
+	background: url('../img/bg.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.blue{
+	background-color: #2e2f8c;
+	height: 20px;
+}
+.miv_column{
+/*	border: solid 1px red;*/
+/*	height: 100px;*/
+}
+.miv_row{
+/*	border: solid 1px green;*/
+	height: 100%;
+}
+.miv_toprow .blue{
+	height:20px;
+}
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.container-fluid{
+	padding-left: 0;
+	padding-right: 0;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>li>a{
+	color:#2e2f8c;
+	font-family: 'Source Sans Pro', bold, sans-serif;
+	font-weight: 700;
+}
+.miv_footer .miv_column {
+	background-color: #2e2f8c;
+	color: #FFF;
+}
+.miv_iconbar{
+	display: block;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+.miv_column_spec{
+	background-color: none !important;
+}
+.miv_blank{
+	height: 200px;
+}
+.miv_hi {
+	height: 100%;
+}
+.miv_footer .miv_column {
+	height: 100px;
+}
+.miv_spacer{
+	height: 100px;
+}
+.miv_spacer2{
+	height: 50px;
+}
+.miv_btn{
+	display: inline-block;
+    font-family: "sourcesanspro", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: 700;
+    border-radius: 3px;
+    background: rgba(46, 47, 140, 0);
+    color: #2e2f8c !important;
+    font-size: 1rem;
+/*    border: 2px solid transparent;*/
+    margin-bottom: 0.2rem;
+    vertical-align: top;
+    text-shadow: none;
+    text-transform: uppercase;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    text-align: left;
+    font-size: 12px;
+}

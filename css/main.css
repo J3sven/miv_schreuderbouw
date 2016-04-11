@@ -51,7 +51,19 @@ body{
 	height: 100%;
 }
 .miv_footer .miv_column {
-	height: 100px;
+	height: 125px;
+	position: relative;
+}
+.miv_footer .miv_corner{
+	background-color: #2e2f8c;
+}
+.miv_footer .miv_corner:after {
+    content: '';
+    position: absolute;
+    top: 0; right: -60px;
+    border-top: 125px solid transparent;
+    border-left: 60px solid #2e2f8c;
+    width: 0;
 }
 .miv_spacer{
 	height: 100px;
@@ -67,7 +79,7 @@ body{
     background: rgba(46, 47, 140, 0);
     color: #2e2f8c !important;
     font-size: 1rem;
-/*    border: 2px solid transparent;*/
+    border: 2px solid transparent;
     margin-bottom: 0.2rem;
     vertical-align: top;
     text-shadow: none;
@@ -77,4 +89,9 @@ body{
     transition: all 0.2s;
     text-align: left;
     font-size: 12px;
+}
+.miv_footericonen{
+margin-top: 25px;
+height: 75px;
+background-color: #fff;
 }

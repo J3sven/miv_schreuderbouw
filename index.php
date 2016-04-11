@@ -87,7 +87,7 @@
                     <div class=" miv_column col-md-6">
                         <div class="miv_footericonen"></div>
                     </div>
-                    <div class=" miv_column col-md-2">
+                    <div class=" miv_column miv_corner col-md-2">
                         <div class="footertext">
                             <p></p>
                         </div>

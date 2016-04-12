@@ -82,15 +82,15 @@
             <?php wp_footer(); ?>
                 <div class="miv_footer miv_row row">
                     <div class=" miv_column col-md-3">
-                        <div class="miv_footerzebra"></div>
+                        <div class="miv_footerzebra"><img src="/schreuder/wp-content/themes/miv_schreuderbouw/img/zebra400.png" alt=""></div>
                     </div>
                     <div class=" miv_column col-md-6">
                         <div class="miv_footericonen"></div>
                     </div>
-                    <div class=" miv_column col-md-2">
-                        <div class="footertext">
-                            <p></p>
-                        </div>
+                    <div class=" miv_column miv_corner col-md-2">
+                        <div class="miv_footertext">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, quidem recusandae neque.
+                            </div>
                     </div>
                     <div class="miv_column_spec col-md-1"></div>
                 </div>

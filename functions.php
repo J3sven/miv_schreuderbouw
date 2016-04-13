@@ -2,6 +2,8 @@
 
 // Register Custom Navigation Walker
 require_once('/inc/wp_bootstrap_navwalker.php');
+// Register Customizer
+require_once('/inc/customizer.php');
 
 // enable featured images
 add_theme_support( 'post-thumbnails' );
@@ -29,3 +31,36 @@ function register_miv_menus() {
 
 }
 add_action( 'init', 'register_miv_menus' );
+
+function miv_sidebars_init() {
+
+    register_sidebar( array(
+        'name'          => 'Home iconen boven',
+        'id'            => 'home_row_1',
+        'before_widget' => '<div class=" miv_column miv_hi col-md-2">',
+        'after_widget'  => '</div>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => 'Home iconen onder',
+        'id'            => 'home_row_2',
+        'before_widget' => '<div class=" miv_column miv_hi col-md-2">',
+        'after_widget'  => '</div>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => 'Home footer logos',
+        'id'            => 'home_footer_1',
+        'before_widget' => '<div class="miv_footericon">',
+        'after_widget'  => '</div>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => 'Home footer adres',
+        'id'            => 'home_footer_2',
+        'before_widget' => '',
+        'after_widget'  => '',
+    ) );
+
+}
+add_action( 'widgets_init', 'miv_sidebars_init' );

@@ -22,7 +22,7 @@
                     <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="<?php echo home_url(); ?>">
-                        <?php bloginfo('name'); ?>
+                        <img src="/schreuder/wp-content/themes/miv_schreuderbouw/img/logotext.png" alt="">
                     </a>
                 </div>
                 <?php
@@ -95,7 +95,7 @@
                     <div class="miv_column_spec col-md-1"></div>
                 </div>
                     <div class="miv_row row">
-                        <div class=" miv_column miv_spacer col-md-12"></div>
+                        <div class=" miv_column miv_spacer2 col-md-12"></div>
                     </div>
 
             </body>

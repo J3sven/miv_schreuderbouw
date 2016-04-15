@@ -1,6 +1,6 @@
 body{
 	font-family: 'Source Sans Pro', bold, sans-serif;
-	background: url('../img/bg.jpg');
+	background: #fff;
 	background-size: cover;
 	background-position: center;
 }
@@ -9,8 +9,8 @@ body{
 	height: 20px;
 }
 .miv_column{
+	height: 100px;
 /*	border: solid 1px red;*/
-/*	height: 100px;*/
 }
 .miv_row{
 /*	border: solid 1px green;*/
@@ -33,6 +33,10 @@ body{
 	font-family: 'Source Sans Pro', bold, sans-serif;
 	font-weight: 700;
 }
+/*.miv_footer {
+	position: fixed;
+	bottom: 0px;
+}*/
 .miv_footer .miv_column {
 	background-color: #2e2f8c;
 	color: #FFF;
@@ -66,7 +70,7 @@ body{
     width: 0;
 }
 .miv_spacer{
-	margin-top: 20%;
+	margin-top: 15%;
 }
 .miv_spacer2{
 	height: 50px;
@@ -89,9 +93,19 @@ body{
     font-size: 15px;
 }
 .miv_footericonen{
+	width: 90%;
 	margin-top: 25px;
 	height: 75px;
 	background-color: #fff;
+}
+.miv_footericonen:after{
+    content: '';
+    position: absolute;
+    top: 25px;
+    right: 63px;
+    border-top: 75px solid transparent;
+    border-left: 45px solid #fff;
+    width: 0;
 }
 .miv_footertext{
 	margin-top: 25px;
@@ -112,4 +126,52 @@ body{
 .navbar-default{
 	background-color: rgba(255, 255, 255, 0.7) !important;
 	background-image: none !important;
+	border-color: transparent;
+}
+.miv_hi .textwidget a {
+	display: inline-block;
+    font-family: "sourcesanspro", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: 700;
+    border-radius: 3px;
+    background: rgba(46, 47, 140, 0);
+    color: #2e2f8c !important;
+    border: 2px solid transparent;
+    margin-bottom: 0.2rem;
+    vertical-align: top;
+    text-shadow: none;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    text-align: left;
+    font-size: 15px;	
+}
+.miv_footericon{
+	float: left;
+	margin-left: 7%;
+}
+.miv_footericon img{
+	height: 75px;
+	width: 75px;
+}
+.entry-content{
+	background-color: #fff;
+}
+.miv_footertext > .textwidget > ul{
+	list-style: none;
+}
+.miv_post{
+	background: #fff;
+	margin-bottom: 20px;
+}
+#miv_nothome{
+	background: none;
+}
+.miv_pageheader{
+	height: 50px;
+	background-color: #2E2F8C;
+	text-align: center;
+}
+.miv_pageheader > h1 > a{
+	color: #FFF;
+	vertical-align: middle;
 }

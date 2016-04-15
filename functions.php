@@ -5,6 +5,9 @@ require_once('/inc/wp_bootstrap_navwalker.php');
 // Register Customizer
 require_once('/inc/customizer.php');
 
+if (is_page_template('front-page.php') && is_front_page() ) {
+require_once('/inc/background_customizer.php');
+}
 // enable featured images
 add_theme_support( 'post-thumbnails' );
 
@@ -16,7 +19,7 @@ function miv_scripts() {
     wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' );
     wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/css/main.css');
 	wp_enqueue_script( 'jquery' );
-    wp_enqueue_script( 'bootstrap-script', get_template_directory_uri() . 'js/bootstrap.min.js', array( 'jquery' ));
+    wp_enqueue_script( 'bootstrap-script', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ));
 }
 add_action( 'wp_enqueue_scripts', 'miv_scripts' );
 

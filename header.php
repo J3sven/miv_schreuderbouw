@@ -9,7 +9,7 @@
         </title>
         <?php wp_head(); ?>
     </head>
-    <body <?php body_class(); ?>>
+    <body <?php body_class(); ?> <?php if (!is_front_page() ) : echo'id="miv_nothome"'; endif;?>>
         <div class="miv_row miv_toprow row"><div class=" miv_column col-md-12 blue"></div></div>
         <nav class="navbar navbar-default" role="navigation">
             <div class="container">
@@ -22,10 +22,10 @@
                     <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="<?php echo home_url(); ?>">
-                        <img src="/schreuder/wp-content/themes/miv_schreuderbouw/img/logotext.png" alt="">
+                        <img src="<?php echo esc_url( get_theme_mod( 'miv_logo' ) ); ?>">
                     </a>
                     <a class="navbar-brand" href="<?php echo home_url(); ?>">
-                        <img src="/schreuder/wp-content/themes/miv_schreuderbouw/img/over.png" alt="">
+                        <img src="<?php echo esc_url( get_theme_mod( 'miv_logo2' ) ); ?>">
                     </a>
                 </div>
                 <?php

@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<?php
+if ( is_front_page() ) :
+    get_header( 'home' );
+else :
+    get_header();
+endif;
+?>
         <div class="container">
             <div class="miv_row row">
                 <div class="miv_column miv_blank col-md-12"></div>

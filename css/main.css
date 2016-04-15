@@ -4,9 +4,6 @@ body{
 	background-size: cover;
 	background-position: center;
 }
-.page-id-19{
-	background: url('../img/bg.jpg');
-}
 .blue{
 	background-color: #2e2f8c;
 	height: 20px;
@@ -36,6 +33,10 @@ body{
 	font-family: 'Source Sans Pro', bold, sans-serif;
 	font-weight: 700;
 }
+/*.miv_footer {
+	position: fixed;
+	bottom: 0px;
+}*/
 .miv_footer .miv_column {
 	background-color: #2e2f8c;
 	color: #FFF;
@@ -161,4 +162,16 @@ body{
 .miv_post{
 	background: #fff;
 	margin-bottom: 20px;
+}
+#miv_nothome{
+	background: none;
+}
+.miv_pageheader{
+	height: 50px;
+	background-color: #2E2F8C;
+	text-align: center;
+}
+.miv_pageheader > h1 > a{
+	color: #FFF;
+	vertical-align: middle;
 }

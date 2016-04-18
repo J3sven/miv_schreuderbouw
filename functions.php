@@ -5,9 +5,6 @@ require_once('/inc/wp_bootstrap_navwalker.php');
 // Register Customizer
 require_once('/inc/customizer.php');
 
-if (is_page_template('front-page.php') && is_front_page() ) {
-require_once('/inc/background_customizer.php');
-}
 // enable featured images
 add_theme_support( 'post-thumbnails' );
 
@@ -40,30 +37,36 @@ function miv_sidebars_init() {
     register_sidebar( array(
         'name'          => 'Home iconen boven',
         'id'            => 'home_row_1',
-        'before_widget' => '<div class=" miv_column miv_hi col-md-2">',
+        'before_widget' => '<div class="miv_widget miv_%1$s miv_column miv_hi col-md-2">',
         'after_widget'  => '</div>',
     ) );
 
     register_sidebar( array(
         'name'          => 'Home iconen onder',
         'id'            => 'home_row_2',
-        'before_widget' => '<div class=" miv_column miv_hi col-md-2">',
+        'before_widget' => '<div class="miv_widget miv_%1$s miv_column miv_hi col-md-2">',
         'after_widget'  => '</div>',
     ) );
 
     register_sidebar( array(
         'name'          => 'Home footer logos',
         'id'            => 'home_footer_1',
-        'before_widget' => '<div class="miv_footericon">',
+        'before_widget' => '<div class="miv_widget miv_%1$s miv_footericon">',
         'after_widget'  => '</div>',
     ) );
 
     register_sidebar( array(
         'name'          => 'Home footer adres',
         'id'            => 'home_footer_2',
-        'before_widget' => '',
-        'after_widget'  => '',
+        'before_widget' => '<div class="miv_widget miv_%1$s"',
+        'after_widget'  => '</div>',
     ) );
 
 }
 add_action( 'widgets_init', 'miv_sidebars_init' );
+
+//change excerpt length to 20
+function wpdocs_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );

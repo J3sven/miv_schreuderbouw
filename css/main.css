@@ -156,7 +156,7 @@ body{
 .entry-content{
 	background-color: #fff;
 }
-.miv_footertext > .textwidget > ul{
+.miv_footertext > .miv_widget > ul{
 	list-style: none;
 }
 .miv_post{
@@ -174,4 +174,18 @@ body{
 .miv_pageheader > h1 > a{
 	color: #FFF;
 	vertical-align: middle;
+}
+.miv_featured img{
+	display: block;
+	height: 100px !important;
+	width: 100px !important;
+}
+.miv_item{
+	border-bottom: solid 3px #2E2F8C;
+	border-right: solid 3px #2E2F8C;
+	height: 200px;
+	margin-bottom: 20px;
+}
+.miv_item p{
+	padding-bottom: 10px;
 }

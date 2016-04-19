@@ -5,6 +5,7 @@
                     </div>
                     <div class=" miv_column col-md-6">
                         <div class="miv_footericonen">
+                            <div class="row">
                                 <?php if ( is_active_sidebar( 'home_footer_1' ) ) :
 
                                 $mysidebars = wp_get_sidebars_widgets();
@@ -18,6 +19,7 @@
                                     dynamic_sidebar( 'home_footer_1' ); 
                             }; 
                             endif; ?>
+                            </div>
                         </div>
                     </div>
                     <div class=" miv_column miv_corner col-md-2">

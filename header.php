@@ -21,10 +21,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<?php echo home_url(); ?>">
+                    <a class="navbar-brand brand1" href="<?php echo home_url(); ?>">
                         <img src="<?php echo esc_url( get_theme_mod( 'miv_logo' ) ); ?>">
                     </a>
-                    <a class="navbar-brand" href="<?php echo home_url(); ?>">
+                    <a class="navbar-brand brand2" href="<?php echo home_url(); ?>">
                         <img src="<?php echo esc_url( get_theme_mod( 'miv_logo2' ) ); ?>">
                     </a>
                 </div>
